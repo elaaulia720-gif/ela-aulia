@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM INPUT JURNAL UMUM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>PT Prima Akuntindo</h2>
+            <p class="sidebar-subtitle">
+                Sistem Informasi Akuntansi
+            </p>
+
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="jurnal_umum.html" class="active">Jurnal Umum</a>
+                <a href="laba_rugi.html">Laporan Laba Rugi</a>
+                <a href="login.html">Keluar</a>
+            </nav>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="main-content">
+
+            <header class="dashboard-header">
+                <h1><strong>FORM INPUT JURNAL UMUM</strong></h1>
+                <p>Pencatatan Transaksi Perusahaan</p>
+            </header>
+
+            <!-- Form Jurnal Umum -->
+            <section class="form-card">
+
+                <form action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal Transaksi</label>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nomor">No. Bukti</label>
+                        <input type="text" id="no." name="no.r"
+                               placeholder="Contoh: JU-001" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="akun">Keterangan</label>
+                        <input type="text" id="akun" name="akun"
+                               placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="debit">Nama Akun</label>
+                        <input type="number" id="Nama Akun" name="Nama Akun"
+                               min="0" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kredit">Posisi Saldo</label>
+                        <input type="number" id="Posisi Saldo" name="Posisi Saldo"
+                               min="0" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="keterangan">Nominal (Rp)</label>
+                        <input type="text" id="Nominal (Rp)" name="Nominal (Rp)"
+                               placeholder="0" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">[Simpan Transaksi]</button>
+                        <button type="reset" class="btn-reset">[Batal]</button>
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
